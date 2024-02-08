@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            body{
+                margin: 0 0 0 -30px;
+            }
+
+            body>ol>li{
+                list-style-type: none;
+                border-right: 3px solid #000;
+                float: left;
+                padding-right: 20px;
+                padding-left: 10px;
+                margin-right: 20px;
+                background-image: url(./img/star.jpg);
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: 10px;
+                /*
+                1.list-style-type:none;
+                2.border:1px solid #000;
+                3.background: #fff url(./img/star.jpg) no-repeat scroll left center;
+                4.background-size: 11px 11px;
+                5.padding-left: 10px;
+                6.float:left;
+                7.margin-right: 20px;
+                8.padding-right: 20px;
+                8-1. 5번8번 합 -> padding: 0px 20px 0px 10px;
+                9.border-right: 2px solid #000;
+                10.body>ol>li:last-child{border-right:none;}
+                */
+            }
+            body>ol>li:nth-child(5){
+                border: none;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <ol>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ol>
+        
+
+    </body>
+
+</html>

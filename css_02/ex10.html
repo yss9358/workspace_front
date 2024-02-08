@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            *{
+              margin: 0px;  
+              padding: 0px;
+            }
+            .box-red{
+                width: 300px;
+                
+                border: 1px solid #000;
+                background-color: #ff0000;
+                /* margin
+                2개쓰면 상하/ 좌우 순서
+                4개쓰면 상 우 하 좌 순서
+                
+                margin: 40px 100px;              
+               
+                margin-left: 10px;
+                margin-top: 20px;
+                margin-right: 30px;
+                margin-bottom: 40px;;
+               
+                margin: 10px 20px 0px 40px;
+                */
+                
+                /* padding
+                padding: 10px;
+                
+                padding-left: 10px;
+                padding-top: 20px;
+                padding-right: 30px;
+                padding-bottom: 40px;
+
+                padding: 10px 20px 30px 40px;
+                */
+                
+                margin-bottom: 50px;
+                
+            }
+            /*
+            margin은 겹쳐져서 적용됨.
+            한곳에서만 줄이지말고 양쪽이 겹치는 부분 확인
+            좌우에서 겹칠때 주의. 상하는 상관x
+            */
+            .box-blue{
+                box-sizing: border-box; /*width의 값을 고정시켜준다*/
+                width: 300px;
+                
+                border: 1px solid #000;
+                background-color: #0000ff;
+                
+                margin: 10px 0px 0px 0px;
+                padding: 10px 10px 10px 10px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box-red">
+            css에서 하다보면 진짜 졸린다 명절전인데 집에빨리가면 참 좋을거 같은데 말이지요
+            안녕하세요
+        </div>
+
+        <div class="box-blue">
+            css에서 하다보면 진짜 졸린다 명절전인데 집에빨리가면 참 좋을거 같은데 말이지요
+            안녕하세요
+        </div>
+        
+
+    </body>
+
+</html>

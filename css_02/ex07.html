@@ -6,24 +6,30 @@
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
         <style>
+            /*
             .bg-img{
-                background-image: url(./img/jung.jpg);
-                width: 550px;
-                height: 550px;
-                color: #fff;
+                background-image: url(./img/back_img01.jpg);
+                width: 2000px;
+                height: 2000px;
+                background-repeat: no-repeat;
+                background-color: yellow; 
+                background-size: auto ;
+                background-position: center bottom;
+                background-attachment: scroll;
             }
+            */
+            .bg-img{
+                width: 2000px;
+                height: 2000px;
+                /*color url() repeat attachment position*/
+                background: #022250 url(./img/back_img01.jpg) no-repeat fixed center center;
+            }
+            
         </style>
     </head>
 
     <body>
         <div class="bg-img">
-            안녕하세요<br><br><br>
-            안녕하세요<br><br><br>
-            안녕하세요안녕하세요<br>
-            안녕하세요<br><br>
-            안녕하세요<br><br>
-            안녕하세요안녕하세요
-            안녕하세요<br>
 
         </div>
     </body>

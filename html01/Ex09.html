@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>EX09</title>
+    </head>
+
+    <body>
+        <p>목차</p>
+        <ol>
+            <li><a href="./Ex01.html" target="_study">h1 ~ h6태그</a></li>
+            <li><a href="./Ex02.html" target="_study">p태그, br태그, hr태그, blackquote태그, q태그,em태그 strong태그, em태그</a></li>
+            <li><a href="./Ex03.html" target="_study">ol,ul 리스트</a></li>
+            <li><a href="./Ex04.html" target="_study">img a 태그</a></li>
+            <li><a href="./Ex05.html" target="_study">table tr td 태그</a></li>
+            <li><a href="./Ex06.html" target="_study">테이블 합치기 연습</a></li>
+            <li><a href="./Ex07.html" target="_study">테이블 thread tbody tfoot 태그</a></li>
+            <li><a href="./Ex08.html" target="_study">테이블 종합 연습문제</a></li>
+            <li><a href="./Ex09.html" target="_study">form 태그</a></li>
+        </ol>
+        <hr>
+        <h1>html태그</h1>
+        <h2>9. form 태그</h2>
+
+        <!-- 
+            - action은 데이터를 보낼곳 method는 get / post 중 선택사용 
+            - value는 입력해서 받을 값
+            - placeholder 입력값전에 보여주고 있는 메세지
+        -->   
+        <form action="데이터를 보낼곳" method="">
+            <input type="text" name="" value="" placeholder="id를 입력하세요">
+            <br>
+            <input type="password" name="" value="" placeholder="password를 입력하세요">
+            <br>
+            <input type="file" name="" value="">
+            <br>
+            <input type="radio" name="" value=""> <input type="radio" name="" value="">
+            <br><!-- radio는 주어진 항목 중 1개 선택-->
+            <input type="checkbox" name="" value=""> <input type="checkbox" name="" value="">     
+            <br>
+            <input type="hidden" name="" value="">
+            <br>
+            <input type="number" name="" value="">
+            <br>
+            <label for="txtId">아이디</label>
+            <input id="txtId" type="text" name="" value="" placeholder="id를 입력하세요">
+            <br>
+            <label for="txtPw">비밀번호</label>
+            <input id="txtPw" type="password" name="" value="" placeholder="pw를 입력하세요">
+            <br>
+            <!-- <checkbox>
+                - checkbox는 주어진 선택지에서만 선택하라는 의미로 사용 
+                - 
+            -->
+            <label for="chkBook">독서</label>
+            <input id="chkBook" type="checkbox" name="hobby" value="book">
+            <label for="chkMusic">음악</label>
+            <input id="chkMusic" type="checkbox" name="hobby" value="music" checked="checked">
+            <label for="chkTrip">여행</label>
+            <input id="chkTrip" type="checkbox" name="hobby" value="trip">
+            <br>
+            <!-- <radio>
+                - radio는 name값이 같으면 하나만 선택됨
+                - name명으로 group을 나눔   
+            -->
+            <label for="rdoApple">사과</label>
+            <input id="rdoApple" type="radio" name="fruit" value="apple">
+            <label for="rdoGrape">포도</label>
+            <input id="rdoGrape" type="radio" name="fruit" value="grape">
+            <label for="rdoOrange">오렌지</label>
+            <input id="rdoOrange" type="radio" name="fruit" value="orange" checked="checked">
+            <br>
+            
+            <label for="rdo-m1">1월</label>
+            <input type="radio" id="rdo-m1" name="month" value="1" checked="checked">
+            <label for="rdo-m2">2월</label>
+            <input type="radio" id="rdo-m2" name="month" value="2">
+            <label for="rdo-m3">3월</label>
+            <input type="radio" id="rdo-m3" name="month" value="3">
+            <br>
+
+            <!-- select -->
+            <select name="telecom">
+                <option>이동통신사를 선택해주세요</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KT</option>
+                <option value="LG">LGU</option>
+                <option value="et" selected="selected">기타</option>
+            </select>
+            <br>
+            <textarea name="content">내용을 입력하세요</textarea>
+
+            <br>
+            <input type="button" value="저장"> <!-- 추천하지 않음 -->
+            <button>저장</button> <!-- 버튼을 만드는 추천방식. 위와 다르게 이미지나 다른것들을 추가할 수 있음 -->
+            <br>
+            <!-- form에 작성한 내용을 서버로 보낼때  <button type="submit">보여질 내용</button> -->
+            <button type="submit">양식 제출</button>
+            <button type="button">닫기</button>
+            <button type="reset">초기화</button> <!-- form 안의 내용을 초기화 시켜줌 -->
+        </form>
+        
+    </body>
+
+</html>

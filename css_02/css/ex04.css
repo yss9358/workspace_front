@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+table{
+    width: 900px;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table>thead>tr{
+    background-color: #8b8b8b;
+    font-weight: bold;
+}
+
+table>thead>tr>th, table>tbody>tr>td{
+    border: 1px solid #000;
+}
+
+table>tbody>tr:hover{
+    background-color: #ffff00;
+}
+
+table>tbody>tr>td:nth-child(2){
+    text-align: left;
+}

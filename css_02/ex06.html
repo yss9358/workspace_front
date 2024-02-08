@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            a:link    {color: #000; text-decoration: none;}     /* 방문전 링크일때 자홍색 선없음 */
+            a:visited {color: #000; text-decoration: overline;}      /* 방문했던 링크일때 회색 위에선*/
+            a:hover   {color: #000; text-decoration: underline;}   /* 마우스오버일때 파란색 아래선 */
+            a:active  {color: #000; text-decoration: line-through;} /* 클릭했을때 빨간색 중앙선*/ 
+            .btn{
+                display: inline-block;
+                color: #000;
+                font-size: 15px;
+                text-align: center;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .btn-small{width: 92px;}
+            .btn-normal{width: 120px;}
+            .btn-large{width: 150px;}
+            .btn-red{
+                background-color: #f8a1a4;
+                border: 1px solid #f47378;            
+            }
+            .btn-red:hover{
+                background-color: #b21016;
+                border: 1px solid #77070b;
+                color: #fff;
+            }
+            .btn-gray{
+                background-color: #bfbfbf;
+                border: 1px solid #a6a6a6;
+            }
+            .btn-gray:hover{
+                background-color: #726e6e ;
+                border:#615d5d ;
+                color: #fff;
+            }
+            .btn-blue{
+                background-color: #7298e9;
+                border: 1px solid #083cad;
+            }
+            .btn-blue:hover{
+                background-color: #1a0186;
+                border: #4356fd;
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="btn btn-red btn-small" type="submit">btn빨간색</button>
+        <button class="btn btn-gray btn-normal" type="submit">btn회색</button>
+        <button class="btn btn-blue btn-large" type="submit">btn파란색</button>
+        <br><br>
+        <div class="btn btn-red">div글쓰기</div>
+        <br><br>
+        <a class="btn btn-red" href="https://www.naver.com" target="_blank">네이버</a>
+
+        
+    </body>
+
+</html>

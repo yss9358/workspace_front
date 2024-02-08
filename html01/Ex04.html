@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ex04</title>
+    </head>
+
+    <body>
+        <p>목차</p>
+        <ol>
+            <li><a href="./Ex01.html" target="_study">h1 ~ h6태그</a></li>
+            <li><a href="./Ex02.html" target="_study">p태그, br태그, hr태그, blackquote태그, q태그,em태그 strong태그, em태그</a></li>
+            <li><a href="./Ex03.html" target="_study">ol,ul 리스트</a></li>
+            <li><a href="./Ex04.html" target="_study">img a 태그</a></li>
+            <li><a href="./Ex05.html" target="_study">table tr td 태그</a></li>
+            <li><a href="./Ex06.html" target="_study">테이블 합치기 연습</a></li>
+            <li><a href="./Ex07.html" target="_study">테이블 thread tbody tfoot 태그</a></li>
+            <li><a href="./Ex08.html" target="_study">테이블 종합 연습문제</a></li>
+            <li><a href="./Ex09.html" target="_study">form 태그</a></li>
+        </ol>
+        <hr>
+       
+        <h1>html태그</h1>
+        <h2>4.img a 태그</h2>
+
+        <h3>이미지 링크(절대경로)</h3>
+        <img src="C:\javaStudy\img\jung.jpg" alt="정우성프로필이미지">
+        <!-- src 는 파일의 위치, alt는 파일이 나오지 않았을때 텍스트로 알려줄 정보 -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="구글로고">
+        <img src="/javaStudy\img\jung.jpg" alt="정우성프로필이미지">
+
+
+        <h3>이미지 링크(상대경로)</h3>
+        <img src="../../img/jung.jpg" alt="정우성프로필이미지">
+        <img src="/javaStudy\workspace_front\html01\yoo.jpg" alt="유재석프로필이미지">
+        <img src="yoo.jpg">
+        <img src="./yoo.jpg">
+        
+        <h3>a태그</h3>
+        <a href="https://www.naver.com" target="_blank">네이버</a><!-- 새창으로 접속 -->
+        <br>
+        <a href="https://www.naver.com" target="_self">네이버</a> <!-- 현재 창에서 접속 -->
+        <br>
+        <!-- target 에 가상의 이름을 지어서 작성하면 새창이 뜬뒤 그 창이 계속 바뀐다.-->
+        <a href="https://www.naver.com" target="aa">네이버</a>
+        <a href="https://www.daum.net" target="aa">다음</a>
+
+        <br>
+        <!-- <a>코드에 텍스트대신 <img> 태그를 달아서 사진을 클릭해 첨부한 사이트 주소로 갈수있다. -> text자리에 img태그로 사진첨부 -->
+        <a href="https://www.naver.com" target="_blank"><img src="C:\javaStudy\workspace_front\html01\yoo.jpg" alt="유재석사진"></a>
+
+    </body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+      
+            .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9   {
+                margin:10px;
+                padding:10px;
+                width:300px;
+                background-color: #ffff00;
+            }
+            .box1 { border: 4px none #ccccff;}
+            .box2 { border: 4px solid #ccccff;}
+            .box3 { border: 4px dotted #ccccff;}
+            .box4 { border: 4px dashed #ccccff;}
+            .box5 { border: 4px double #ccccff;}
+            .box6 { border: 4px groove #ccccff;}
+            .box7 { border: 5px inset #ccccff;}
+            .box8 { border: 4px outset #ccccff;}
+            .box9 { border: 4px ridge #ccccff;}
+
+
+            .box10 {
+                width:300px;
+                height:150px;
+                background-color: #ffff00;
+                border-top: 4px solid #ff0000;
+                border-right: 4px double #ff0000;
+                border-bottom: 4px dashed #ff0000;
+                border-left: 4px dotted #ff0000;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box1">
+           boder 선모양 확인:  none 
+        </div>
+        
+        <div class="box2">
+            boder 선모양 확인:  solid 
+        </div>
+
+        <div class="box3">
+            boder 선모양 확인:  dotted  
+        </div>
+        
+        <div class="box4">
+            boder 선모양 확인:  dashed  
+        </div>
+
+        <div class="box5">
+            boder 선모양 확인:  double  
+        </div>
+        
+        <div class="box6">
+            boder 선모양 확인:  groove
+        </div>
+
+        <div class="box7">
+            boder 선모양 확인:  inset
+        </div>
+
+        <div class="box8">
+            boder 선모양 확인:  outset
+        </div>
+        
+        <div class="box9">
+            boder 선모양 확인:  ridge
+        </div>  
+
+        <div class="box10">
+            *위치별 선지정<br>
+            가로 300px,  세로 150px<br> 
+            배경색 #ffff00<br>
+            선두께 모두 4px<br>
+            선모양 그림참고
+        </div>  
+        
+
+    </body>
+
+</html>

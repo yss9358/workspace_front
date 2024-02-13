@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <link rel="stylesheet" href="./css/board.css">
+        <!-- 스타일시트자리 -->
+        <!-- 
+            mysite <h1>
+            게시판 | 갤러리 | 방명록 <h2>
+            게시판<h2> - 일반게시판(리스트,글쓰기폼,읽기,수정폼..)<h3>
+            갤러리<h2>
+            방명록<h2>
+
+        -->
+    </head>
+
+    <body>
+        <div class="content">
+            <h3>일반게시판</h3>
+            
+            <ol class="clearfix">
+                <li>홈</li>
+                <li>게시판</li>
+                <li>일반게시판</li>
+            </ol>
+
+            <!-- 게시판 선택-->
+            <div class="form-group">
+                <label class="form-text" for="sel-board">게시판선택</label> 
+                <select id="sel-board">
+                    <option selected="selected">선택해주세요</option>
+                    <option>공지사항</option>
+                    <option>가입인사</option>
+                    <option>유머게시판</option>
+                    <option>기타게시판</option>
+                </select>
+            </div>
+            <!-- 게시판 선택-->
+
+            <!-- 제목 -->
+            <div class="form-group">
+                <label class="form-text" for="txt-title">제목</label>
+                <input type="text" id="txt-title">
+            </div>    
+            <!-- //제목 -->
+
+            <!-- 비밀번호 -->
+            <div class="form-group">
+                <label class="form-text" for="txt-pw">비밀번호</label>
+                <input type="password" id="txt-pw">
+            </div>
+            <!-- //비밀번호 -->
+
+            <!-- 공개범위 -->
+            <div class="form-group">
+                <span class="form-text">공개범위</span>
+                
+                <label for="rdo-me">본인</label>
+                <input type="radio" id="rdo-me" name="scope">
+                
+                <label for="rdo-login">로그인회원</label>
+                <input type="radio" id="rdo-login" name="scope">
+                
+                <label for="rdo-friend">친구</label>
+                <input type="radio" id="rdo-friend" name="scope">
+                
+                <label for="rdo-all">전체</label>
+                <input type="radio" id="rdo-all" name="scope">
+            </div>
+            <!-- //공개범위 -->
+
+            <!-- 허용범위 -->
+            <div class="form-group">
+                <span class="form-text">허용범위</span> 
+                
+                <label for="chk-reply">댓글허용</label>
+                <input type="checkbox" id="chk-reply">
+                
+                <label for="chk-answer">답글허용</label>
+                <input type="checkbox" id="chk-answer">
+                
+                <label for="chk-like">좋아요허용</label>
+                <input type="checkbox" id="chk-like">
+            </div>
+            <!-- //허용범위 -->
+
+            <!-- 내용 -->
+            <div class="form-group">
+                <textarea id="txt-content"></textarea>
+            </div>
+            <!-- //내용 -->
+
+            <!-- 첨부파일 -->
+            <div class="form-group">
+                <label class="form-text" for="txt-file">첨부파일</label>
+                <input type="file" id="txt-file">
+            </div>
+            <!-- //첨부파일 -->
+
+            <!-- 버튼 -->
+            <div class="btn-area">
+                <button>등록</button>
+                <button>초기화</button>
+            </div>
+            <!-- //버튼 -->
+        </div>
+        <!-- //class="content" -->
+    </body>
+
+</html>

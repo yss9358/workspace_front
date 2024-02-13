@@ -11,7 +11,7 @@ body>ol>li::after{
     padding: 10px;
     content: ">";
 }
-body>ol>li:nth-child(4)::after{
+body>ol>li:last-child:after{
     content: "";
 }
     

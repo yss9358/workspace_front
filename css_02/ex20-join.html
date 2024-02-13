@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>스타일시트</title>
+        <link rel="stylesheet" href="./css/join.css">
+    </head>
+
+    <body>
+        <div class="join">
+            <h3>회원가입</h3>
+
+            <ol class="clearfix">
+                <li>홈</li>
+                <li>유저</li>
+                <li>회원가입</li>
+            </ol>
+
+            <!-- 아이디 -->
+            <div class="form-group">
+                <label for="txt-id" class="form-title">아이디</label>
+                <input id="txt-id" type="text" placeholder="아이디를 입력하세요">
+            </div>
+            <!-- //아이디 -->
+            
+            <!-- 패스워드-->
+            <div class="form-group"> 
+                <label for="txt-pw" class="form-title">패스워드</label>
+                <input id="txt-pw" type="password" placeholder="패스워드를 입력하세요">
+            </div>
+            <!-- //패스워드-->
+
+            <!-- 이름 -->
+            <div class="form-group">
+                <label for="txt-name" class="form-title">이름</label>
+                <input id="txt-name" type="text" placeholder="이름을 입력하세요">
+            </div>
+            <!-- //이름 -->
+            
+            <!-- 프로필사진-->
+            <div class="form-group">
+                <label for="photo" class="form-title">프로필사진</label>
+                <input id="photo" type="file">
+            </div>
+            <!-- //프로필사진-->
+
+            <!-- 주소 -->
+            <div class="form-group">
+                <label for="txt-adrs" class="form-title">주소</label>
+                <input id="txt-adrs" type="text" placeholder="우편번호를 입력하세요">
+                <button type="button"><a href="https://www.epost.go.kr/search.RetrieveNewAddressNewZipCdList.comm" target="_blank">우편번호찾기</a></button>
+                <br>
+                <input id="adrs2" type="text" placeholder="주소를 입력하세요">
+
+            </div>
+            <!-- //주소 -->
+
+            <!-- 이동통신사 -->
+            <div class="form-group">
+                <label for="sel-phone" class="form-title">이동통신사</label>
+                <select id="sel-phone">
+                    <option selected="selected">선택해주세요</option>
+                    <option>SKT</option>
+                    <option>LG</option>
+                    <option>KT</option>
+                    <option>기타</option>
+                </select>
+            </div>
+            <!-- //이동통신사 -->
+
+            <!-- 나이 -->
+            <div class="form-group">
+                <span class="form-title">나이</span>
+                
+                <label for="age10">10대</label>
+                <input id="age10" type="radio" name="age">
+                
+                <label for="age20">20대</label>
+                <input id="age20" type="radio" name="age">
+                
+                <label for="age30">30대</label>
+                <input id="age30" type="radio" name="age">
+                
+                <label for="age40">40대</label>
+                <input id="age40" type="radio" name="age">
+                
+                <label for="age-etc">기타</label>
+                <input id="age-etc" type="radio" name="age">
+            </div>
+            <!-- //나이 -->
+
+            <!-- 혈액형 -->
+            <div class="form-group">
+                <span class="form-title">혈액형</span>
+                
+                <label for="bld-a">A형</label>
+                <input id="bld-a" type="radio" name="bld">
+                
+                <label for="bld-b">B형</label>
+                <input id="bld-b" type="radio" name="bld">
+                
+                <label for="bld-o">O형</label>
+                <input id="bld-o" type="radio" name="bld">
+                
+                <label for="bld-ab">AB형</label>
+                <input id="bld-ab" type="radio" name="bld">
+            </div>
+            <!-- //혈액형 -->
+
+            <!-- 취미 -->
+            <div class="form-group">
+                <span class="form-title">취미</span>
+                
+                <label for="hby-read">독서</label>
+                <input id="hby-read" type="checkbox" name="hobby">
+                
+                <label for="hby-music">음악</label>
+                <input id="hby-music" type="checkbox" name="hobby">
+                
+                <label for="hby-travel">여행</label>
+                <input id="hby-travel" type="checkbox" name="hobby">
+                
+                <label for="hby-movie">영화</label>
+                <input id="hby-movie" type="checkbox" name="hobby">
+                
+                <label for="hby-coding">코딩</label>
+                <input id="hby-coding" type="checkbox" name="hobby">
+                
+                <label for="hby-etc">기타</label>
+                <input id="hby-etc" type="checkbox" name="hobby">
+            </div>
+            <!-- //취미 -->
+
+            <!-- 자기소개 -->
+            <div class="form-group">
+                <span class="form-title self-intro">자기소개</span>
+                <textarea id="txt-content"></textarea>
+            </div>
+            <!-- //자기소개 -->
+
+            <!-- 버튼 -->
+            <div class="btn-area">
+                <button type="submit">등록</button>
+                <button type="reset">초기화</button>
+            </div>
+            <!-- //버튼 -->
+        </div> <!-- //form -->
+    </body>
+
+</html>

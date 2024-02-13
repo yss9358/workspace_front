@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/*ex18.html*/
+
+/*전체 초기화*/
+body, div, ol, ul, li, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form{
+    margin: 0px;
+    padding: 0px;
+}
+/*clearfix*/
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+/*리스트*/
+ol, ul {
+    list-style-type: none;
+}
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+.content{
+    width: 700px;
+    background-color: #fff;
+
+}
+/*타이틀*/
+.content h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+/*리스트*/
+ol>li{
+    float: left;
+}
+
+.content ol>li::after{
+    content: ">";
+}
+
+.content ol>li:last-child::after{
+    content: "";
+}
+
+/*폼 그룹*/
+.content .form-group{
+    margin-bottom: 10px;
+}
+/*폼 텍스트*/
+.content .form-group .form-text{
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+/*게시판선택*/
+.content .form-group #sel-board{
+    width: 200px;
+}
+/*제목*/
+.content .form-group #txt-title{
+    width: 600px;
+}
+/*비밀번호*/
+.content .form-group #txt-pw{
+    width: 196px;
+}
+/*공개범위 - 폼 라디오버튼*/
+.content .form-group input[type="radio"]{
+    margin-right: 10px;
+}
+/*허용범위 - 폼 체크박스*/
+.content .form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
+/*내용*/
+.content .form-group #txt-content{
+    width: 690px;
+    height: 80px;
+}
+/*첨부파일*/
+
+/*버튼*/
+.content .btn-area {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.content .btn-area button{
+    width: 60px;
+    height: 30px;
+}

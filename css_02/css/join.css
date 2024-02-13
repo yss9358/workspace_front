@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+/* 초기화 */
+/* 전체 초기화 */
+body, div, ol, ul, li, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+/* 전체 */
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+/* 폼 가로 600px / 흰색 */
+.join{
+    width: 600px;
+    background-color: #fff;
+}
+
+/*a 링크 관리*/
+a:link {color: #000; text-decoration: none;} 
+a:visited {color: #ff0000; text-decoration: underline;} 
+a:hover {color: #0000FF; text-decoration: underline;}
+a:active {color: #FF0000; text-decoration: none;}
+
+
+/* 회원가입(제목) 폰트 18px / bold */
+.join h3{
+    font-size: 18px; 
+    font-weight: bold;
+ }
+
+ /* 경로 리스트 */
+ol>li{
+    list-style-type: none;
+    float: left;
+    margin: 10px 0px 20px 0px;
+}
+
+/* 리스트 다음 > 나오게 */
+.join ol>li::after{
+    content: ">";
+}
+
+/* 리스트 마지막 > 안나오게 */
+.join ol>li:last-child::after{
+    content: "";
+}
+
+/* 폼그룹 나누기 */
+.join .form-group{
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+/* 폼 타이틀 가로120px / 가운데정렬 / 폰트크기12px */
+.join .form-group .form-title{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+ }
+/* 주소 간격 맞추기 */
+ .join .form-group #adrs2{
+    width: 450px;
+    margin: 3px 0px 0px 124px;
+}
+
+ /**/
+.join .form-group label{
+    font-size: 15px;
+    font-family: "맑은 고딕";
+}
+
+ /* input text */
+.join .form-group input[type="text"]{
+    font-size: 15px;
+    font-family: "맑은 고딕";
+}
+/* input password */
+.join .form-group input[type="password"]{
+    font-size: 15px;
+    font-family: "맑은 고딕";
+}
+/* select */
+.join .form-group select{
+    font-size: 15px;
+    font-family: "맑은 고딕";
+}
+/* input file */
+.join .form-group input[type="file"]{
+    font-size: 15px;
+    font-family: "맑은 고딕";
+}
+
+/* radio 간격 */
+.join .form-group input[type="radio"]{
+    font-size: 15px;
+    margin-right: 10px;
+}
+/* checkbox 간격*/
+.join .form-group input[type="checkbox"]{
+    font-size: 15px;
+    margin-right: 10px;
+}
+/* 자기소개 title 위로*/
+.join .form-group .self-intro{
+    vertical-align: top;
+}
+
+/* content */
+.join .form-group #txt-content{
+    width: 460px;
+    height: 120px;
+}
+
+/* 버튼 */
+.join .btn-area{
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+/* 버튼 크기 */
+.join .btn-area button{
+    padding: 10px 0px 10px 0px;
+    width: 120px;
+}
+
+
+
+
+
+
+

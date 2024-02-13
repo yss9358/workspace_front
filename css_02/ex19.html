@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+            /*clearfix*/
+            .clearfix::before, clearfix::after{
+                display: block;
+                content: "";
+                line-height: 0;
+            }
+            .clearfix::after{clear: both;}
+            .box-gray{
+                width:700px;   
+                background-color: #808080;
+                float: left;
+            }
+            .box-blue{
+                width:200px;
+                background-color: #0000ff;
+                float: left;
+            }
+            .box-green{
+                width:200px;
+                background-color: #00ff00;
+                float: left;
+            }
+            .box-red{
+                width:800px;
+                height: 30px;
+                background-color: #ff0000;
+                float: left;
+            }
+      
+        </style>
+    </head>
+
+    <body>
+        <div class="box-gray clearfix"> 
+            <div class="box-blue">파랑<br>파랑<br>파랑<br>파랑<br>파랑<br>파랑<br></div>
+            <div class="box-green">초록</div>
+        </div>
+        
+        <div class="box-red"></div>
+        
+        
+
+    </body>
+
+</html>

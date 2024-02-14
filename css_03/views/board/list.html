@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite</title>
+        <style>
+            div{
+                border: 1px solid #000;
+            }
+            .subMenu{
+                float: left;
+            }
+            .mainMenu{
+                float: left;
+            }
+            /*clearfix*/
+            .clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+            .clearfix::after {clear: both;}
+        </style>
+    </head>
+    
+    <body>
+        <div>header</div>
+
+        <div>nav - gnb</div>
+        <div class="clearfix">
+            <div class="subMenu">sub-menu</div>
+
+            <div class="mainMenu">list</div>
+        </div>
+        <div>footer</div>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/************************************************공통***************************************************/
+
+/* margin, padding reset */
+body, div, ol, ul, li, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body - font */
+body{
+    font-family: "맑은 고딕", 돋움, 굴림;
+    font-size: 12px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+/* a태그 관리*/
+a:link{text-decoration: none; color: #000;}
+a:visited{text-decoration: none; color:#000;}
+a:hover{text-decoration: none; color: #000;}
+a:active{text-decoration: none; color:#000;}
+
+/* ul ol */
+ul, ol{
+    list-style-type: none;
+}
+/******************************************************************************************************/
+
+/**********************************************레이아웃*************************************************/
+#wrap-main{
+    width: 1000px;
+    margin: 0 auto; /* margin : 상하 / 좌우 */
+}
+
+#wrap-main #header{
+    padding: 10px 0;
+    border-bottom: 1px solid #9c9696;
+   /* border: 1px solid #000; */
+}
+
+#wrap-main #nav{
+    padding: 15px 0;
+    border-bottom: 1px solid #9c9696;
+   /* border: 1px solid #000; */
+}
+
+#wrap-main #contents{
+    border: 1px solid #000;
+}
+
+#wrap-main #footer{
+    border: 1px solid #000;
+}
+/*********************************************************************************************************/
+
+/*********************************************** header **************************************************/
+#header h1{ /* 로고 */
+    float: left;
+    font-size: 35px;
+    color: #79b30b;
+}
+#header ul{
+    float: right;
+    margin: 20px 0 0 0;
+}
+#header ul>li{
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 3px 3px 3px 3px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    font-size: 10px;
+}
+/******************************************************************************************************/
+
+/* nav */
+#nav ul>li{
+    float:left;
+    width: 248px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* contents */
+
+/* footer */

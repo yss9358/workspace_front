@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* board-search*/
+#contents-a #main #board-search{
+    padding: 10px 0 10px 0;
+    text-align: right;
+}
+#contents-a #main #board-search input[type="text"]{
+    width: 150px;
+    height: 30px;
+}
+#contents-a #main #board-search button{
+    width: 50px;
+    height: 30px;
+}
+/*************************************/
+
+/* board-table*/
+#contents-a #main #board-table table{
+    border-collapse: collapse;
+    padding: 10px 0 10px 0;
+    width: 816px;
+    height: 200px;
+    text-align: center;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+#contents-a #main #board-table thead>tr>th{
+    background-color: #adacac;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 30px;
+}
+
+#contents-a #main #board-table tbody>tr>td{
+    border-bottom: 1px solid #adacac;
+    background-color: #fff;
+    height: 25px;
+}
+
+#contents-a #main #board-table tbody>tr>td:nth-child(2){
+    text-align: left;
+}
+/********************/
+
+/* board-list */
+#contents-a #main #board-list{
+    padding: 10px 0 10px 300px;
+    font-size: 12px;
+}
+
+#contents-a #main #board-list ol>li{
+    
+    float: left;
+}
+
+#contents-a #main #board-list ol>li::after{
+    content: "";
+    margin: 0 5px 0 5px ;
+}
+/**************/
+
+/* board-write*/
+#contents-a #main #board-write{
+    padding: 10px 0 10px 0;
+    text-align: right;
+    font-family: "맑은 고딕";
+    font-size: 15px;
+}
+
+
+#contents-a #main #board-write a{
+    background-color: #e0e0e0;
+    border: 1px solid #000;
+    padding: 5px;
+}
+/**************/

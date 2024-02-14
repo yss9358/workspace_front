@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/******************************** contents(메인페이지에서만사용) ****************************/
+#contents #profile{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+#contents #greeting-box{
+    width: 600px;
+    float: left;
+    font-size: 15px;
+}
+
+#contents #greeting-box #greeting{
+    font-weight: bold;
+}
+/********************************** //contents *******************************************/

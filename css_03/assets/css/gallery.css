@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* 이미지올리기 */
+#contents-a #main #gal-upload{
+    padding: 10px 0 10px 0;
+    text-align: right;
+    font-size: 20px;
+}
+#contents-a #main #gal-upload a{
+    background-color: #cecece;
+    border: 1px solid #252525;
+    padding: 5px;
+}
+/***************************************/
+
+/* 이미지 */
+#contents-a #main #gal-show{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    background-color: red;
+    float: left;
+}
+
+#contents-a #main #gal-show img{
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+
+

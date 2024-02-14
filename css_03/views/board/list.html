@@ -1,34 +1,137 @@
 <!DOCTYPE html>
 
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>MySite</title>
-        <style>
-            div{
-                border: 1px solid #000;
-            }
-            .subMenu{
-                float: left;
-            }
-            .mainMenu{
-                float: left;
-            }
-            /*clearfix*/
-            .clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
-            .clearfix::after {clear: both;}
-        </style>
-    </head>
-    
-    <body>
-        <div>header</div>
+<head>
+    <meta charset="UTF-8">
+    <title>MySite</title>
+    <link rel="stylesheet" href="../../assets/css/mysite.css">
+    <link rel="stylesheet" href="../../assets/css/board.css">
+</head>
 
-        <div>nav - gnb</div>
-        <div class="clearfix">
-            <div class="subMenu">sub-menu</div>
+<body>
+    <div id="wrap-main">
+        <div id="header" class="clearfix">
+            <h1>MySite</h1>
+            <ul class="clearfix">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div><!-- //header-->
+        <div id="nav">
+            <ul class="clearfix">
+                <li><a href="">입사지원서</a></li>
+                <li><a href="">게시판</a></li>
+                <li><a href="">갤러리</a></li>
+                <li><a href="">방명록</a></li>
+            </ul>
+        </div><!-- //nav -->
+        <div id="contents-a" class="clearfix">
+            <div id="a-side">
+                <h2>게시판</h2>
+                <ul>
+                    <li><a href="">일반게시판</a></li>
+                    <li><a href="">댓글게시판</a></li>
+                </ul>
+            </div><!-- //a-side -->
+            <div id="main">
+                <div id="join" class="clearfix">
+                    <h3>일반게시판</h3>
+                    <ul>
+                        <li><a href="">홈</a></li>
+                        <li><a href="">게시판</a></li>
+                        <li><a href="">일반게시판</a></li>
+                    </ul>
+                </div><!-- h3접속 -->
+                
+                <div id="board-search">
+                    <input type="text">
+                    <button type="button">검색</button>
+                </div> <!-- //board-search -->
+            
+                <div id="board-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>조회수</th>
+                                <th>작성일</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123</td>                                  
+                                <td><a href="">게시판 게시글입니다</a></td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>                                  
+                                <td><a href="">게시판 게시글입니다</a></td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>                                  
+                                <td><a href="">게시판 게시글입니다</a></td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>                                  
+                                <td><a href="">게시판 게시글입니다</a></td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                            <tr>
+                                <td>123</td>                                  
+                                <td><a href="">게시판 게시글입니다</a></td>
+                                <td>정우성</td>
+                                <td>1232</td>
+                                <td>2020-12-23</td>
+                                <td>[삭제]</td>
+                            </tr>
+                        </tbody>
+                    </table>        
+                </div><!-- //board-table -->
+                <div id="board-list">
+                    <ol>
+                        <li><a href="">◀</a></li>
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">8</a></li>
+                        <li><a href="">9</a></li>
+                        <li><a href="">10</a></li>
+                        <li><a href="">▶</a></li>
+                    </ol>
+                </div> <!-- //board-list -->
+                <div id="board-write">
+                    <a href="">글쓰기</a>
+                </div> <!-- //board-write -->
+               
+            </div><!-- //main -->
 
-            <div class="mainMenu">list</div>
-        </div>
-        <div>footer</div>
-    </body>
+        </div> <!-- //contents-a -->
+        <div id="footer">
+            <p>
+                Copyright ⓒ2024 유승수 All right reserved 
+            </p>
+        </div><!-- //footer -->
+    </div><!-- //wrap-main-->
+</body>
 </html>

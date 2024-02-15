@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/******************************** board - list.html ********************************************/
 /* board-search*/
 #contents-a #main #board-search{
     padding: 10px 0 10px 0;
@@ -75,3 +76,129 @@
     padding: 5px;
 }
 /**************/
+
+/******************************** //board - list.html ********************************************/
+
+/*************************************** board - read.html ***************************************/
+/* contents-a > main > read */
+#contents-a #main #read{
+    border-bottom: 1px solid #000;
+    width: 820px;
+    height: 130px;
+    margin: 20px 0 20px 0;
+    padding: 0 0 19px 0;
+}
+
+#read .form-group{
+    height: 20px;
+    padding: 0 0 15px 0;
+}
+#read .form-group .form-title{
+    display: inline-block;
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+#read .form-group .form-content{
+    width: auto;
+    font-weight: bold;
+}
+/****************************************/
+
+/* contents-a > main > read-content */
+#read-content {
+    width: 820px;
+    height: 130px;
+    border-bottom: 1px solid #000;
+    margin: 0 0 10px 0;
+    padding: 0 0 12px 0;
+}
+
+/****************************************/
+/* contents-a > main > read-change */
+#read-change{
+    /*border: 1px solid #000;*/
+    text-align: right;
+}
+
+#read-change a{
+    display: inline-block;
+    background-color: #e0e0e0;
+    border: 1px solid #adacac;
+    width: 66px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin: 0 0 10px 5px;
+}
+
+/****************************************/
+
+/************************************* //board - read.html ***************************************/
+
+/*************************************** board - write.html ***************************************/
+#contents-a #main #write {
+    /*border: 1px solid #000;*/
+    width: 816px;
+    margin: 20px 0 20px 0;
+}
+#write .form-title{
+    display: inline-block;
+    /*border: 1px solid #000;*/
+    width: 50px;
+    height: 30px;
+    text-align: left;
+    line-height: 30px;
+}
+#write #write-title{
+    /*border: 1px solid #000;*/
+    width: 756px;
+    height: 30px;
+}
+#write-content #write-txt {
+    /*border: 1px solid #000;*/
+    width: 816px;
+    height: 400px;
+    margin: 0 0 10px 0 ;
+}
+/************************************* //board - write.html ***************************************/
+
+
+/*************************************** board - edit.html ***************************************/
+#contents-a #main #edit{
+    border-bottom: 1px solid #000;
+    width: 816px;
+    height: 130px;
+    margin: 20px 0 20px 0;
+    padding: 0 0 19px 0;
+}
+
+#edit .form-group{
+    height: 20px;
+    padding: 0 0 15px 0;
+}
+#edit .form-group .form-title{
+    display: inline-block;
+    width: 50px;
+    margin: 0 10px 0 0;
+}
+#edit .form-group .form-content{
+    width: 756px;
+    font-weight: bold;
+}
+
+#edit #edit-title{
+    width: 733px;
+    height: 28px;
+}
+
+#edit-content{
+    width: 816px;
+    height: 400px;
+    border-bottom: 1px solid #000;
+    margin: 0 0 10px 0;
+}
+#edit-content #edit-txt{
+    width: 816px;
+    height: 400px;
+}
+/************************************* //board - edit.html ***************************************/

@@ -20,10 +20,10 @@ body{
 .clearfix::after {clear: both;}
 
 /* a태그 관리*/
-a:link{text-decoration: none; color: #000;}
-a:visited{text-decoration: none; color:#000;}
-a:hover{text-decoration: none; color: #000;}
-a:active{text-decoration: none; color:#000;}
+a:link{text-decoration: none; color: #000;} /* 방문전 링크일때  */
+a:visited{text-decoration: none; color:#000;} /* 방문했던 링크일때 */
+a:hover{text-decoration: none; color: #000;} /* 마우스오버일때  */
+a:active{text-decoration: none; color:#000;}  /* 클릭했을때 */ 
 
 /* ul ol */
 ul, ol{
@@ -93,6 +93,12 @@ ul, ol{
     border-radius: 3px;
     font-size: 10px;
 }
+#header h1>a:link{text-decoration: none; color: #79b30b;} /* 방문전 링크일때  */
+#header h1>a:visited{text-decoration: none; color:#79b30b;} /* 방문했던 링크일때 */
+#header h1>a:hover{text-decoration: none; color: #79b30b;} /* 마우스오버일때  */
+#header h1>a:active{text-decoration: none; color:#79b30b;} /* 클릭했을때 */
+
+
 /********************************************** //header **************************************************/
 
 
@@ -164,7 +170,7 @@ ul, ol{
 #contents-a #main #join ul{
     float: right;
     padding: 7px 0 0 0 ;
-    font-size: 10px;
+    font-size: 11px;
 }
 #contents-a #main #join ul>li{
     float: left;

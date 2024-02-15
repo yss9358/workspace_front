@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/*********************************** 게스트 공용 ****************************************/
+
+
+/********************************* //게스트 공용 ****************************************/
+
+
+/*********************************** 일반방명록 ****************************************/
+/* guest-normal*/
+#contents-a #main #guest-normal{
+    width: 820px;
+    height: 250px;
+    padding: 15px 0 30px 0;
+   /* border: 1px solid #000;*/
+}
+#guest-normal .guest-write{
+    width: 820px;    
+    font-size: 10px;
+    border-collapse: collapse;
+}
+#guest-normal .guest-write thead{
+    height: 40px;
+}
+#guest-normal .guest-write thead>tr>th{
+    text-align: left;
+    font-size: 10px;
+    width: 70px;
+    text-indent: 7px;
+}
+#guest-normal .guest-write thead>tr>td{
+    width: 340px;
+}
+#guest-normal .guest-write input{
+    width: 325px;
+    height: 30px;
+    margin: 5px 5px 5px 5px ;
+}
+
+#guest-normal .guest-write #guest-txt{
+    width: 800px;
+    height: 149px;
+    margin: 5px 7px 8px 7px;
+}
+#guest-normal .guest-write button{
+    width: 100px;
+    height: 29px;
+    margin: 7px 360px 7px 360px;
+}
+/* //guest-normal */
+
+
+/* guest-show */
+
+#guest-show .guest-book{
+    width: 820px;
+    font-size: 10px;
+    border-collapse: collapse;
+    text-align: left;
+    text-indent: 10px;
+}
+#guest-show .guest-book thead{
+    /*width: 82px,328px,327px,83px;*/
+    height: 36px;
+}
+#guest-show .guest-book tbody{
+    height: 36px;
+}
+
+/* //guest-show */
+/********************************* //일반방명록 ****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************** ajax방명록 ****************************************/
+
+
+/********************************* //ajax방명록 ****************************************/

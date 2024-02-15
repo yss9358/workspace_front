@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/************************************ 회원 공용 *************************************/
+#contents-a .form-group{
+    /* border: 1px solid #000;*/
+     margin: 0 0 20px 0 ;
+     font-size: 15px;
+     font-family: "맑은 고딕";
+ }
+ #contents-a .form-group .form-title{
+     display: inline-block;
+     width: 165px;
+     text-align: right;
+     font-size: 15px;
+     font-family: "맑은 고딕";
+     margin: 0 25px 0 0 ;
+ }
+ 
+ #contents-a .form-group input[type="text"] {
+     width: 140px;
+     height: 26px;
+     font-size: 12px;
+     font-family: "맑은 고딕";
+ }
+ 
+ #contents-a .form-group input[type="password"]{
+     width: 140px;
+     height: 26px;
+     font-size: 12px;
+     font-family: "맑은 고딕";
+ }
+ #contents-a .form-group input[type="radio"]{
+     margin: 0 10px 0 0;
+ }
+ #contents-a .form-group input[type="checkbox"]{
+     margin: 0 10px 0 0;
+ }
+ #contents-a .user-button{
+     padding: 40px 0 30px 0;
+     text-align: center;
+ }
+ 
+ #contents-a .user-button button{
+     width: 90px;
+     height: 30px;
+     background-color: #ebebeb;
+     font-size: 10px;
+     line-height: 0;
+     padding : 10px 20px 10px 20px;
+ }
+/*********************************** //회원 공용**********************************/
+
+
+/***************************** 회원가입 *********************************/
+#contents-a #userJoin {
+    width: 520px;
+    height: 340px;
+    border: 1px solid #000;
+    margin: 15px 150px 30px 150px;
+    padding: 40px 0 0 0;
+}
+
+/***************************** //회원가입 *******************************/
+
+/***************************** 회원정보 *********************************/
+#contents-a #userInfo{
+    width: 520px;
+    height: 296px;
+    border: 1px solid #000;
+    margin: 15px 150px 30px 150px;
+    padding: 46px 0 0 0;
+}
+#contents-a #userInfo .form-group .showid{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#contents-a #userInfo .infoChange{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 44px 210px 0 210px;
+}
+#contents-a #userInfo .infoChange a{
+    display: inline-block;
+    background-color: #ebebeb;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 12px 10px 12px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+/***************************** //회원정보 *******************************/
+
+/******************************* 로그인 *******************************/
+#contents-a #userLogin{
+    width: 520px;
+    height: 220px;
+    border: 1px solid #000;
+    margin: 15px 150px 30px 150px;
+    padding: 46px 0 0 0;
+}
+
+/***************************** //로그인 *******************************/

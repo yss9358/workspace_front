@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MySite</title>
+    <link rel="stylesheet" href="../../assets/css/mysite.css">
+    <link rel="stylesheet" href="../../assets/css/guest.css">
+</head>
+
+<body>
+    <div id="wrap-main">
+        <div id="header" class="clearfix">
+            <h1><a href="">MySite</a></h1>
+            <ul class="clearfix">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div><!-- //header-->
+        <div id="nav">
+            <ul class="clearfix">
+                <li><a href="">입사지원서</a></li>
+                <li><a href="">게시판</a></li>
+                <li><a href="">갤러리</a></li>
+                <li><a href="">방명록</a></li>
+            </ul>
+        </div><!-- //nav -->
+        <div id="contents-a" class="clearfix">
+            <div id="a-side">
+                <h2>방명록</h2>
+                <ul>
+                    <li><a href="">일반방명록</a></li>
+                    <li><a href="">ajax방명록</a></li>
+                </ul>
+            </div><!-- //a-side -->
+            <div id="main">
+                <div id="join" class="clearfix">
+                    <h3>일반게시판</h3>
+                    <ul>
+                        <li><a href="">홈</a></li>
+                        <li><a href="">방명록</a></li>
+                        <li><a href="">일반방명록</a></li>
+                    </ul>
+                </div><!-- h3접속 -->
+                <div id="guest-normal">
+                    <table class="guest-write" border="1">
+                        <thead>
+                            <tr>
+                                <th><label for="user-name" class="form-title">이름</label></th>
+                                <td><input id="user-name" type="text"></td>
+                                <th><label for="user-pw" class="form-title">패스워드</label></th>
+                                <td><input id="user-pw" type="password"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <textarea id="guest-txt"></textarea>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <button type="submit">등록</button>
+                                </td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div><!-- //guest-normal -->
+                
+                <div id="guest-show">
+                    <table class="guest-book" border="1">
+                        <thead>
+                            <tr>
+                                <th>1234555</th>
+                                <th>이정재</th>
+                                <th>2020-03-03 12:1:12</th>
+                                <th>[삭제]</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">방명록 글입니다. 방명록 글입니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div><!-- //main -->
+
+        </div> <!-- //contents-a -->
+        <div id="footer">
+            <p>
+                Copyright ⓒ2024 유승수 All right reserved 
+            </p>
+        </div><!-- //footer -->
+    </div><!-- //wrap-main-->
+</body>
+</html>

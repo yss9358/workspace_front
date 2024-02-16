@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/************************************************ 공용 **************************************************************/
+
+/* margin, padding reset */
+body, div, ol, ul, li, dl, dt, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* body */
+body {
+    font-family: "맑은 고딕", 돋움, 굴림;
+    font-size: 10px;
+}
+
+/* clearfix */
+.clearfix::before, .clearfix::after {display: block; content: ""; line-height: 0;}
+.clearfix::after {clear: both;}
+
+/* a태그 관리 */
+a:link {text-decoration: none; color: #000;} /* 방문전 링크일때  */
+a:visited {text-decoration: none; color:#000;} /* 방문했던 링크일때 */
+a:hover {text-decoration: none; color: #000;} /* 마우스오버일때  */
+a:active {text-decoration: none; color:#000;}  /* 클릭했을때 */ 
+
+/* ul ol 관리*/
+ul, ol {
+    list-style-type: none;
+}
+
+/************************************************ //공용 **************************************************************/
+
+/************************************************ 레이아웃 **************************************************************/
+#wrap-main{
+    width: 1000px;
+    margin: 0 auto;
+   /* background-color: red;*/
+
+}
+#wrap-main #contents {
+    width: 1000px;
+    height: 550px;
+   /* border: 1px solid #000; */ 
+}
+#wrap-main #main-footer{
+    width: 1000px;
+    height: 60px;
+    margin: 0 0 0 20px;
+    background-color: #F0F0F0;
+    color: #000;
+  /*  border: 1px solid #000;*/
+    /*padding: 25px 0 25px 0;*/
+}
+/********************************************** //레이아웃 **************************************************************/
+
+
+/******************* header *******************/
+#wrap-main #header{
+    width: 200px;
+    margin: 60px auto 40px auto;
+   /* background-color: red;
+    border: 1px solid #000;*/
+}
+
+
+#wrap-main #header h1 a{
+    width: 180px;
+    height: 90px;   
+    padding: 0 0 0 20px;
+}
+
+#wrap-main #header ul{
+  /*  background-color: blue;*/
+    padding: 0 0 0 4px
+}
+
+#wrap-main #header ul>li{
+    width: 80px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+/****************** //header *******************/
+
+
+
+/******************* footer *******************/
+
+#wrap-main #main-footer ul>li{
+    float: left;
+    text-align: left;
+    padding: 22px 20px 22px 20px;
+}
+/***************** //footer *******************/
+
+
+
+
+/********************************************** contents-main **************************************************************/
+/******************* contents-main *******************/
+#wrap-main #contents #contents-main ul{
+    width: 465px;
+    height: 50px;
+    /*border: 1px solid #000;*/
+    margin: 0 auto 10px auto;
+}
+#wrap-main #contents #contents-main ul>li{
+    float: left;
+}
+
+#wrap-main #contents #contents-main ul input{
+    border: 2px solid #254EDB;
+    width: 408px;
+    height: 44px;
+    outline: none;
+}
+#wrap-main #contents #contents-main ul a{
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    background-color: #254EDB;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+}
+
+/***************** //contents-main *******************/
+/***************** contents-main-search *********************/
+
+#contents #contents-main #search{
+    display: inline-block;
+    /*border: 1px solid #000;*/
+    height: 20px;
+    padding: 0 0 0 380px ;
+}
+
+#contents-main #search label{
+    font-size: 15px;
+    text-align: center;
+}
+#contents-main #search input[type="radio"]{
+    margin: 0 28px 0 0 ;
+}
+
+/********************************************** //contents-main **************************************************************/

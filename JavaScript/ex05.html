@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        window.console.log("-------------------------------------------------");
+        let code = prompt("과목코드입력");
+        console.log(typeof code);
+        console.log(code);
+        let no = Number.parseInt(code); // parseInt로 숫자변환을 해줄수있다 
+                                        // 그냥 사용할때는 문자열로비교 
+
+        switch(no){
+            case 1 :
+                console.log("R101호");
+                break;
+            case 2 :
+                console.log("R202호");
+                break;
+            case 3 :
+                console.log("R303호");
+                break;
+            case 4 :
+                console.log("R404호");
+                break;
+            default :
+                console.log("상담원에게 문의하세요.");
+                break;
+        }
+    </script>
+</html>
+

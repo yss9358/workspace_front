@@ -5,6 +5,7 @@
     <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보-->
     <title>JBlog</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/mainJoin.css"
 </head>
 <body>
     <div id="wrap-main">
@@ -20,10 +21,34 @@
         </div> <!-- //header -->
 
         <div id="contents">
-
+            <div id="contents-join">
+                <ul class="clearfix">
+                    <li><label for="login-id">아이디</label></li>
+                    <li><input id="login-id" type="text"></li>
+                    <li><button type="submit">아이디체크</button></li>
+                </ul>
+                <div>
+                    <p>사용할 수 있는 아이디 입니다.</p>
+                </div>
+                <ul class="clearfix">
+                    <li><label for="login-pw">패스워드</label></li>
+                    <li><input id="login-pw" type="password"></li>
+                </ul>
+                <ul class="clearfix">
+                    <li><label for="join-name">이름</label></li>
+                    <li><input id="join-name" type="text" ></li>
+                </ul>
+                <ul class="clearfix">
+                    <li><span>약관동의</span></li>
+                    <li><input id="join-chk" type="checkbox"></li>
+                    <li><label for="join-chk">서비스 약관에 동의합니다.</label></li>
+                </ul>
+                
+                <button type="submit">회원가입</button>
+            </div> <!-- //contents-login -->   
         </div> <!-- //contents -->
         
-        <div id="main-footer" >
+        <div id="main-footer" class="clearfix">
             <ul>
                 <li><a href="">회사소개</a></li>
                 <li><a href="">서비스소개</a></li>

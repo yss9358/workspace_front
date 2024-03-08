@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/********************** contents-join **********************************************/
+#wrap-main #contents #contents-join{
+    width: 440px;
+    height: 330px;
+    border: 1px solid #cacaca;
+    margin: 40px 280px 40px 280px;
+    text-align: center;
+}
+#contents-join ul>li{
+    float: left;
+}
+
+#contents-join label, #contents-join span{
+    display: inline-block;
+    width: 60px;
+    height: 16px;
+    font-size: 10px;
+    border: 1px solid #000;
+    text-align: left;
+    margin: 0 0 0 20px;
+}
+
+
+
+/******************** //contents-join **********************************************/

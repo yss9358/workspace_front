@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/********************** contents-login **********************************************/
+#wrap-main #contents #contents-login{
+    width: 340px;
+    height: 240px;
+    border: 1px solid #CACACA;
+    margin: 0 330px 40px 330px;
+    padding: 30px 0 0 0 ;
+}
+
+#contents-login ul>li{
+    float: left;
+}
+
+#contents-login label{
+    display: inline-block;
+    /*border: 1px solid #000;*/
+    font-size: 15px;
+    text-align: left;
+    width: 60px;
+    height: 32px;
+    margin: 0 40px 12px 20px;
+    line-height: 32px;
+}
+#contents-login input{
+    width: 162px;
+    height: 32px;
+}
+#contents-login div{
+    width: 300px;
+    margin: 0 0 0 20px;
+    border-bottom: 1px solid #000;
+}
+
+#contents-login p{
+    font-size: 15px;
+    width: 300px;
+    margin: 25px 0 35px 0 ;
+    text-indent: 20px;
+}
+#contents-login button{
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    margin: 10px 30px 0 30px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+/****************** //contents-login *************************************************/

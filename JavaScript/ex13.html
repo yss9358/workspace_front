@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        let x; //*전역변수? 지역변수? 상수? --> 전역변수 
+        
+        function testFunc(){
+            let y; //전역변수? *지역변수? 상수? --> 지역변수 
+           
+            x = 10; //*전역변수? 지역변수? 상수? --> 전역변수 x 에 10 을 대입 
+            y = 20; //전역변수? *지역변수? 상수? --> 지역변수 y 에 20을 대입
+            z = 30; //*전역변수? 지역변수? 상수? --> 변수선언되어있지 않음 -> 함수정의 밖에 
+                                                // 전역변수 let z; 가 생성. 생성된 전역변수에 30을 대입
+            
+            if(y == 20) {
+                let b = 40; //전역변수? 지역변수? 상수? --> 지역변수 b에 40을 대입
+                b++; //  --> b에 +1 
+                console.log("b = " + b); //출력 --> b = 41 출력 
+            }
+            //이곳에서 변수 b, x, y, z에 접근가능?
+            //console.log("b = " + b); //안됨 --> 지역변수 b 접근 안됨
+            console.log("x = " + x); //가능 --> 전역변수 x 접근 가능
+            console.log("y = " + y); //가능 --> 지역변수 y 접근 가능
+            console.log("z = " + z); //가능 --> 전역변수 z 접근 가능
+        }
+       
+        testFunc(); 
+        console.log(x);
+        //console.log(y);
+        console.log(z);
+
+        // testFunc() ->  b=41 출력 , b=41 출력안됨  --> 에러가 나면 뒤는 출력x  , x=10 출력 , y=20출력 , z=30 출력
+        //이곳에서 변수 b, x, y, z에 접근가능?
+        // --> b 접근 불가능
+        // --> x 접근 가능
+        // --> y 접근 불가능
+        // --> z 접근 가능
+    </script>
+
+
+
+
+</html>
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        console.log("---------------------------------------------");
+        let arr01 = new Array();
+        arr01[0] = 1;
+        arr01[1] = 100;
+        console.log(arr01[0]);
+        console.log(arr01[1]);
+        ///////////////////////
+
+        console.log("---------------------------------------------");
+        let arr02 = [];
+        arr02[0] = 3;
+        arr02[1] = 10;
+        arr02[2] = 7;
+        console.log(arr02);
+
+        console.log("---------------------------------------------");
+        let arr03 = [10,20,30,40];
+        console.log(arr03[2]);
+
+        for(let i=0; i<arr03.length; i++){
+            console.log(arr03[i]);
+        }
+
+        console.log("---------------------------------------------");
+        let arr04 = [];
+        
+        arr04[0] = 1;
+        arr04[1] = 2.5;
+        arr04[2] = "안녕하세요";
+        arr04[3] = "hello";
+        arr04[4] = 5>3;
+        arr04[5] = function check(){console.log("익명함수")};
+        
+        for(let i=0; i<arr04.length; i++){
+            console.log(arr04[i]);
+        }
+        // 배열에 함수가 들어갔으면 실행시켜야 값이 나온다.
+        arr04[5]();
+
+        console.log("---------------------------------------------");
+        let arr05 = [1, 2.5, "안녕", ["정우성","박명수","유재석"], 5>3 ];
+        // 배열안에 배열을 넣을 수 있다
+        console.log(arr05[1]);
+        console.log(arr05[3]);
+        console.log(arr05[3][1]);
+
+        
+        console.log("---------------------------------------------");
+        let nameArr = [];
+        // 배열에 push 메소드를 사용하면 배열 맨 끝에 추가해준다.
+        nameArr.push("정우성");
+        nameArr.push("박명수");
+        nameArr.push("유재석");
+        nameArr.push("이효리");
+
+        // 맨 끝 배열의 값을 지운다.
+        nameArr.pop();
+
+        console.log(nameArr);
+
+        // for(let i=0; i<nameArr.length; i++){
+        //     console.log(nameArr[i]);
+        // }
+
+        console.log("---------------------------------------------");
+        
+
+    </script>
+
+</html>
+

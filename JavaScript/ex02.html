@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        window.console.log("--------------------------------------");
+        console.log("#변수선언");
+
+        var no = 3;
+        var str = "안녕하세요";
+        var boo = 3>5;
+        var year, month, day;
+        year  = "2024년";        
+        month = "03월";
+        day = "8일";
+        console.log(year + month + day);
+
+        let no2 = 3;
+        let str2 = "안녕하세요";
+        let boo2 = 3>5;
+        let year2, month2, day2;
+        year2 = "2025년";
+        console.log(year2);
+
+        window.console.log("--------------------------------------");
+        console.log("#let - 같은 이름의 변수선언 x ");
+        
+        // 같은 변수이름을 지으면 에러 
+        let person = "정우성";
+        //let person = "이효리";
+        console.log(person);
+
+        window.console.log("--------------------------------------");
+        console.log("#var - 같은 이름의 변수선언 가능 ");
+        // 뒤에 쓴 변수의 값으로 변경됨
+        var guest = "정우성";
+        var guest = "유재석";
+        console.log(guest);
+
+        window.console.log("--------------------------------------");
+        console.log("#const - 상수 선언 ");
+        // 대문자로 선언 - 선언할 때 값을 정해야함(값 초기화)
+        const MAX = 10;
+        console.log(MAX);
+        
+        window.console.log("--------------------------------------");
+        console.log("# 값을 넣지 않고 변수선언 - 값을 넣으면 자료형이 바뀜");
+
+        let data;
+        console.log(typeof data); // undefined - 변수 선언만 되어있고 자료형은 정해지지 않음
+
+        data = 15;
+        console.log(typeof data); // 변수에 값을 넣으면 자료형이 바뀜
+
+        data = "안녕하세요"
+        console.log(typeof data);
+
+        data = (5>3);
+        console.log(typeof data);
+
+        window.console.log("--------------------------------------");
+        console.log("# undefined : null 비교");
+
+        let myVar1;
+        console.log(myVar1);
+        let myVar2 = null ;
+        console.log(myVar2);
+
+        window.console.log("--------------------------------------");
+        console.log("# 일치연산자");
+       
+        // === 은 자료형과 값이 모두 일치해야한다
+        console.log(123==123); // true
+        console.log(123===123); // true
+        console.log("123"==123); // true
+        console.log("123"===123); // false
+
+        window.console.log("--------------------------------------");
+        console.log("# undefined : null 비교");
+        let var01;
+        let var02=null;
+        
+        console.log(var01);
+        console.log(var02);
+        
+        console.log(var01==var02); //true
+        console.log(var01===var02); //false
+
+        window.console.log("--------------------------------------");
+
+        console.log("" == false); // 빈 문자열을 false 로 봄 --> true
+        console.log("" == 0); // 빈 문자열을 0 으로봄 --> true
+        console.log(0 == false); // 0 을 false로 봄 --> true
+
+    </script>
+    
+</html>
+

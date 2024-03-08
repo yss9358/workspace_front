@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>기본데이터타입</h2>
+    </body>
+    <!-- //body-->
+
+    <script>
+        window.console.log("aaa");  //window 생략가능;
+        console.log("------------------------------");
+        console.log("#데이터타입 확인");
+        // 자바스크립트 기본 자료형은 number / string / boolean 3개
+        console.log(typeof 1);
+        console.log(typeof 1.5);
+        console.log(typeof "한");
+        console.log(typeof "안녕하세요");
+        console.log(typeof '한');
+        console.log(typeof '안녕하세요');
+        console.log(typeof (5>3));
+        console.log(typeof (5<3));
+
+        console.log("------------------------------");
+        console.log("#number형 ");
+        console.log(13+5);
+        console.log(13-5);
+        console.log(13/5);
+        console.log(13*5);
+        console.log(13%5);
+
+        console.log(13+5.2);
+        console.log(5+3*2);
+        console.log((5+3)*2);
+
+        console.log("------------------------------");
+        console.log("String형");
+        console.log("동해물과 백두산이");
+        console.log('동해물과 백두산이');
+
+        console.log('동해물과\"백두산\"이');
+        console.log("동해물과\"백두산\"이"); // 쌍따옴표를 그대로 사용하고 싶을떄
+
+        console.log("동해물과 \n백두산이"); // 줄바꿈
+
+        console.log("동해물과\t백두산이"); // tab키를 쓴거처럼 공간비움
+        console.log("동해물과백\\두산이"); // \ 를 그대로 사용
+
+        console.log("------------------------------");
+        console.log("boolean 형");
+        // 같다 == / 같지않다 !=
+        console.log(52>273);
+        console.log(52<273);
+
+        console.log("------------------------------");
+        console.log("연산자");
+        // [ && and연산자 - 둘다만족]  [ || or연산자 - 둘중아무거나 ] [! 연산자 - 반대로]
+        
+        console.log( (5>3) && (5<3) ); // T && F -> F
+        console.log( !((5>3) && (5<3) ) ); // T && F  -> F -> !F -> T
+       
+        console.log( (5>3) || (5<3) ); // T || F -> T
+        console.log( !((5>3) || (5<3)) ); // T || F -> T -> !T -> F
+     
+
+    </script>
+
+
+</html>
+

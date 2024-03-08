@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        // let str = "global";
+
+        // function checkScope(){
+        //     let str = "local";
+
+        //     console.log(str);
+        // }
+        // checkScope(); // checkScope 로 부르고 () 가 붙으면 실행됨
+        // console.log(str);
+
+        let str = "global";
+        let str2;
+
+        function checkScope(){
+            str = "local";
+            // console.log(str);
+            
+            str2 = "로컬";
+            // console.log(str2);
+        }
+        checkScope();
+        console.log(str);
+        console.log(str2);
+        
+    </script>
+
+</html>
+

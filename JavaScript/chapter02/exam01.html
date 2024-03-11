@@ -10,15 +10,35 @@
     <!-- 아이디-->
     <ul>
         <li id="first"> 텍스트1 텍스트1 텍스트1 텍스트1 텍스트1</li>
-        <li id="first"> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
-        <li id="first"> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3</li>
-        <li id="first"> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4</li>
+        <li id="second"> 텍스트2 텍스트2 텍스트2 텍스트2 텍스트2</li>
+        <li id="third"> 텍스트3 텍스트3 텍스트3 텍스트3 텍스트3</li>
+        <li id="fourth"> 텍스트4 텍스트4 텍스트4 텍스트4 텍스트4</li>
         <li id="first"> 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1 텍스트1-1</li>
     </ul>
 </body>
 
 <script>
+    // dom트리 생성 완료 시점 
+    document.addEventListener("DOMContentLoaded",function(){
+        console.log("DOM tree 완료");
+        // second
+        let seTag = document.getElementById("second");
+        console.log(seTag);
+        seTag.style.color="red";
+        // third
+        document.getElementById("third").style.color="blue";
+        // fourth
+        document.getElementById("fourth").style.color="purple";
+        // first (맨위의 1개만 가져온다. 한페이지에 id는 한개씩)
+        document.getElementById("first").style.color="gray";
+    });
 
+    // 페인팅 완료 시점
+    window.addEventListener("load",function(){
+        console.log("painting 완료")
+    });
     
+    
+
 </script>
 </html>

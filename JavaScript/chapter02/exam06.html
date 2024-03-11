@@ -20,6 +20,32 @@
     <p id="p02">문장2</p>
 </body>
 <script>
-    
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        //<input id="txt-userId" class="form-txt" type="text" name="userId" value="jung" placeholder="아이디를 입력해주세요">
+        // 속성값들은 변경가능 / tagName은 변경 불가
+        let tag01 = document.querySelector("#txt-userId");
+        
+        tag01.id = "u-id";
+        tag01.type = "password";
+        tag01.name = "u-name";
+        tag01.className = "f-txt";
+        tag01.value = "정우성";
+        tag01.placeholder = "비밀번호를 입력하세요"
+        console.log(tag01);
+
+        // tagname 은 변경불가
+        tag01.tagName = "div";
+        console.log(tag01.tagName);
+        
+        // 속성변경 실습
+        let tag02 = document.querySelector("a");
+        console.log(tag02);
+        tag02.textContent = "구글"; // innerHtml 과 비교
+        tag02.target = "_self";
+        tag02.href = "https://www.google.com";
+
+
+        });
 </script>
 </html>

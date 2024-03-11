@@ -19,5 +19,23 @@
 </body>
 <script>
     
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        
+        // class 명이 red인 li 태그 찾기
+        // 하나씩 지정해서 설정하거나 for문으로 반복문사용
+        let liRedTags = document.getElementsByClassName("red");
+        console.log(liRedTags);
+        liRedTags[0].style.color="red";
+        liRedTags[1].style.color="red";
+
+        // class 명이 blue 인 li 태그 찾기
+        // 두번째를 초록색으로 
+        let liBlueTags = document.getElementsByClassName("blue");
+        console.log(liBlueTags);
+        liBlueTags[1].style.color="green";
+
+        
+    });
 </script>
 </html>

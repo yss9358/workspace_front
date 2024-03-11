@@ -39,7 +39,49 @@
 </body>
 
 <script>
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		// 1개 가져오기. 결과가 하나일때, 해당하는 값이 여러개여도 하나만 옴
+		let h1Tag = document.querySelector("h1");
+		console.log(h1Tag);
+		h1Tag.style.color="#ff0000";
 
+		// 실험 - li 태그가져오기 
+		// 태그가 여러개이더라도 제일 위의 태그하나만 가져옴
+		let liTag = document.querySelector("li");
+		console.log(liTag);
+
+		// 여러개 가져오기 -> 배열형태로 가져옴 / 결과값이 여러개일때
+		let liTags = document.querySelectorAll("li");
+		console.log(liTags);
+		for(let i=0; i<liTags.length; i++){
+			liTags[i].style.color="#0000ff";
+		}
+
+		// class명 active 바꾸기
+		let activeTag = document.querySelector("#nav>ul>li.active");
+		console.log(activeTag);
+		activeTag.style.color="#00ff00";
+
+		// li요소 와 label요소  빨간색으로 
+		// 선택자 활용, 비슷한 류의 태그가 많아지면 구체적으로 작성 ex> #nav>ul>li
+		let labelTags = document.querySelectorAll("#nav>ul>li, form>label");
+		console.log(labelTags);
+		for(let i=0; i<labelTags.length; i++){
+			labelTags[i].style.color="#ff0000";
+		}
+		
+		// name값으로 가져오기
+		let txtNameTag = document.querySelector("input[name='userId']");
+		console.log(txtNameTag);
+		txtNameTag.style.color="#ff0000";
+
+		// li tag 제일 마지막 파랑으로
+		let lastLi = document.querySelector("#nav ul>li:last-child");
+		console.log(lastLi);
+		lastLi.style.color="#00ff00";
+	});
 
 </script>
 

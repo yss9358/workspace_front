@@ -25,6 +25,28 @@
 </body>
 
 <script>
+	document.addEventListener("DOMContentLoaded", function(){
+
+		// 첫번째 li를 빨간색으로 변경
+		let liTags = document.getElementsByTagName("li");
+		console.log(liTags);
+		liTags[0].style.color="#ff0000";
+		
+		// 모든 p태그를 파랑색으로 변경 
+		let pTags = document.getElementsByTagName("p");
+		console.log(pTags);
+		for(let i=0; i<pTags.length; i++){
+			pTags[i].style.color="#0000ff";
+		}
+		
+		// 태그이름으로 요소를 찾으면 배열형태로 반환됨
+		// 태그의 요소가 한개이더라도 배열형태로 반환되어 문법사용시 주의
+		let h1Tag = document.getElementsByTagName("h1");
+		console.log(h1Tag);
+		h1Tag[0].style.color="#00ff00";
+
+
+	});
 
 
 </script>

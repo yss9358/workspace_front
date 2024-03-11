@@ -12,9 +12,9 @@
     <h1>자바<strong>스크립트</strong></h1>
         <div id="nav">
             <ul>
-                <li id="board"><span>rp</span>시판</li>
+                <li id="board"><span>게</span>시판</li>
                 <li id="gallery" class="active"><span>갤</span>러리</li>
-                <li id="board"><span>방</span>명록</li>
+                <li id="guest"><span>방</span>명록</li>
             </ul>
         </div>
         <form action="" method="">
@@ -24,19 +24,95 @@
             <label class="form-text">패스워드</label>
             <input type="password" name="pw" value=""><br>
 
-            <label class="fomr-text">이름</label>
+            <label class="form-text">이름</label>
             <input type="text" name="userName" value="정우성"><br>
 
             <button type="submit">전송</button>
         </form>
         
-        <a href="https://www.naver.com" target="_blank">네이버</a>
+        <a class="box red" href="https://www.naver.com" target="_blank">네이버</a>
 
         <p id="p01">자바<strong>스크립트</strong></p>
         <p id="p02">자바<strong>스크립트</strong></p>
 </body>
 
 <script>
-    
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+
+        // tag 값 확인 -> 요소.tagName
+        let tag01 = document.querySelector("#nav");
+        console.log(tag01);
+        console.log(tag01.tagName); // 태그 이름 -> DIV
+        
+        let tag02 = document.querySelector("a[target='_blank']");
+        console.log(tag02);
+        console.log(tag02.tagName);
+
+        // 아이디 값 확인 -> 요소.id 
+        let tag03 = document.querySelector("div");
+        console.log(tag03);
+        console.log(tag03.id);
+
+        let tags04 = document.querySelectorAll("ul>li");
+        console.log(tags04);
+        for(let i=0; i<tags04.length; i++){
+            console.log(tags04[i].id);
+        }
+
+        // 클래스명 확인 -> 요소.className
+        let tags05 = document.querySelectorAll("form>label");
+        console.log(tags05);
+        console.log(tags05[1].className);
+
+        // 클래스가 여러개일 경우 확인
+        let tag06 = document.querySelector("a");
+        console.log(tag06);
+        console.log(tag06.className);
+
+        // 기타 속성 / <> 태그의 속성값들을 확인해 볼 수 있다
+        let tag07 = document.querySelector("#txt-userId");
+        console.log(tag07);
+        console.log(tag07.id);
+        console.log(tag07.tagName);
+        console.log(tag07.className);
+        console.log(tag07.type);
+        console.log(tag07.name);
+        console.log(tag07.value);
+        console.log(tag07.placeholder);
+
+        // 기타 속성
+        let tag08 = document.querySelector("a");
+        console.log(tag08);
+        console.log(tag08.tagName);
+        console.log(tag08.href);
+        console.log(tag08.target);
+        console.log(tag08.className);
+        // <a>ㅇㅇㅇ</a> 안의 값
+        console.log(tag08.innerHTML);
+        console.log(tag08.textContent);
+
+        // <h1>자바<strong>스크립트</strong></h1>
+        let tag09 = document.querySelector("h1");
+        console.log(tag09);
+        console.log(tag09.textContent); // 글자만
+        console.log(tag09.innerHTML); // 태그안의 모든 것
+
+        // <li id="board"><span>게</span>시판</li>
+        let tag10 = document.querySelectorAll("#nav>ul>li");
+        console.log(tag10);
+        console.log(tag10[0].innerHTML);
+        console.log(tag10[0].textContent);
+
+        for(let i=0; i<tag10.length; i++){
+            console.log(tag10[i].innerHTML);
+            console.log(tag10[i].textContent);
+        }
+
+        
+
+
+
+    });
 </script>
 </html>

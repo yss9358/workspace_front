@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+        console.log("---------------------------------------------------------");
+        // 객체로 리스트 만들기
+        
+        let personVo = {
+
+        };
+        let personList = []
+        
+        let personVo1 = {
+            no : 1,
+            name : "박명수",
+            hp : "010-1111-1111",
+            company : "02-1111-1111"
+        }
+        console.log(personVo1);
+        let personVo2 = {
+
+        }
+        personVo2.no = 2;
+        personVo2.name = "유재석";
+        personVo2.hp = "010-2222-2222";
+        personVo2.company = "02-2222-2222";
+
+        console.log(personVo2);
+        let personVo3 = {
+            no : 3,
+            name : "서장훈",
+            hp : "010-3333-3333",
+            company : "02-3333-3333"
+        }
+        let personVo4 = {
+            no : 4,
+            name : "이효리",
+            hp : "010-4444-4444",
+            company : "02-4444-4444"
+        }
+        console.log(personVo2.name);
+
+        personList.push(personVo1);
+        personList.push(personVo2);
+        personList.push(personVo3);
+        personList.push(personVo4);
+   
+        console.log(personList);
+        console.log(personList[1].name);
+        console.log(personList[0].company);
+    </script>
+
+</html>
+

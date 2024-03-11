@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <!-- //head-->
+
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <!-- //body-->
+
+    <script>
+
+        // 코어객체 - Date객체 
+        let date = new Date();
+        console.log(date);
+
+        let year = date.getFullYear();
+        let month = date.getMonth()+1; // 월은 0~11 로 나타냄 - > +1해야 원래 달이 나옴
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        console.log(hour);
+        console.log(minute);
+        console.log(second);
+
+        console.log("------------------------------------------------------");
+        // 코어객체 - String 객체 
+
+        let str = "hello";
+        console.log(str.length); //  ex)아이디 몇글자 이상 불가 
+        console.log("990101-1234567".charAt(8)); // ex)주민번호로 여자인지 남자인지 / 미성년자 체크
+
+
+        console.log("------------------------------------------------------");
+        // 코어객체 - Number 객체 
+
+        let num01 = "100";
+        let num02 = 5;
+        let no = Number("123");
+        // Number(value) 는 숫자로 변환 , parseInt(value) 는 정수로 변환
+        console.log(num01 + num02);
+        console.log(Number(num01)+num02); // Number(value) -- 문자열을 숫자로 바꿔줌
+        console.log(num02+no);
+
+        console.log("------------------------------------------------------");
+        // 코어객체 - Math 객체
+        console.log(Math.PI);
+        console.log(Math.abs(-124)); // 절대값
+        console.log(Math.random()); // 0~1 / 미니로또 사용
+
+
+
+
+    </script>
+
+</html>
+

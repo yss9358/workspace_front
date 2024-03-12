@@ -38,9 +38,13 @@
         
         let p1Tag = document.querySelector("#p1");
         console.log(p1Tag);
+        // 맨 앞에 추가
         p1Tag.insertAdjacentHTML("afterbegin", "<strong>가나다라</strong>");
 
-
+        // 컨텐츠 맨뒤에 adcdef 추가
+        p1Tag.insertAdjacentHTML("beforeend","abcddfg");
+        
+        
 
 
 

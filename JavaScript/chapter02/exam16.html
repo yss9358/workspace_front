@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Inser title here</title>
+<style>
+    
+</style>
+</head>
+
+<body>
+    <!-- beforebegin -->
+    <ul>
+        <!-- afterbegin -->
+        <li>첫번째 아이템 입니다</li>
+        <li>두번째 아이템 입니다</li>
+        <li>세번째 아이템 입니다</li>
+        <li>네번째 아이템 입니다</li>
+        <li>다섯번째 아이템 입니다</li>
+        <li>여섯번째 아이템 입니다</li>
+        <li>일곱번째 아이템 입니다</li>
+        <li>여덟번째 아이템 입니다</li>
+        <li>아홉번째 아이템 입니다</li>
+        <li>열번째 아이템 입니다</li>
+        <!-- beforend -->
+    </ul>
+    <!-- afterend -->
+
+</body>
+
+<script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded",function(){
+        console.log("DOM tree 생성");
+
+        let liTags = document.querySelectorAll("li");
+        console.log(liTags[0]);
+        
+        // this - 이벤트 리스너가 붙어 있는 그 요소
+        // event.target - 사용자가 실제로 클릭한 요소 
+
+        for(let i=0; i<liTags.length; i++){
+            liTags[i].addEventListener("click",function(event){
+                // console.log(event);
+                console.log(i+"번 클릭");
+                
+                // console.log(this.textContent);
+                // this.remove(); // 삭제
+                // this.textContent = ""; // 내용 비우기
+                
+                // console.log(event.target);              
+                // event.target.remove();
+                // event.target.textContent = "";
+                                
+            });
+        }
+       
+    });
+
+</script>
+
+</html>

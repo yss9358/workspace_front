@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Inser title here</title>
+<style>
+    
+</style>
+</head>
+
+<body>
+    <!-- beforebegin -->
+    <ul>
+        <!-- afterbegin -->
+        <li>첫번째 아이템 입니다</li>
+        <li>두번째 아이템 입니다</li>
+        <li>세번째 아이템 입니다</li>
+        <li>네번째 아이템 입니다</li>
+        <li>다섯번째 아이템 입니다</li>
+        <!-- beforend -->
+    </ul>
+    <!-- afterend -->
+    
+    <button id="btn1" type="button">앞에추가</button>
+    <button id="btn2" type="button">뒤에추가</button>
+
+</body>
+
+<script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        // console.log("DOM tree")
+
+        let btn1 = document.querySelector("#btn1");
+        let btn2 = document.querySelector("#btn2");
+        
+        let ulTag = document.querySelector("ul");
+        let str1 = "<li>앞에 추가된 아이템 입니다.</li>";
+        let str2 = "<li>뒤에 추가된 아이템 입니다.</li>";
+
+        // 앞에추가 버튼을 클릭할때
+        btn1.addEventListener("click",function(){
+            ulTag.insertAdjacentHTML("afterbegin",str1)
+        });
+
+        // 뒤에추가 버튼을 클릭할때
+        btn2.addEventListener("click",function(){
+            ulTag.insertAdjacentHTML("beforeend",str2);
+        });
+
+    });
+
+</script>
+
+</html>

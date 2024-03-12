@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+</style>
+
+
+</head>
+
+<body>
+    <div>
+		<table border="1" width="540px">
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" value=""></td>
+				<td>비밀번호</td>
+				<td><input type="password" name="pw" value=""></td>
+			</tr>
+			<tr>
+				<td colspan="4"><textarea cols="72" rows="5" name="content"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4"><button id="btnWrite" type="button">등록</button></td>
+			</tr>
+		</table>
+	</div>
+	<br>
+
+</body>
+
+<script>
+
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded",function(){
+		// console.log("DOM tree 생성 완료");
+
+		let guestbookVo = {};
+		let btnWrite = document.querySelector("#btnWrite");
+		
+		btnWrite.addEventListener("click",function(){
+			let name = document.querySelector('input[type="text"]');
+			let password = document.querySelector('input[type="password"]');
+			let content = document.querySelector('textarea');
+			guestbookVo.name = name.value;
+			guestbookVo.password = password.value;
+			guestbookVo.content = content.value;
+			console.log(guestbookVo);
+			name.value = "";
+			password.value ="";
+			content.value="";
+		});
+	
+	});
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

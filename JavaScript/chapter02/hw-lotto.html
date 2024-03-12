@@ -45,9 +45,26 @@
 </body>
 
 <script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        // console.log("DOM tree 생성");
 
+        document.querySelector("#btnMakeNo").addEventListener("click", function(){
+            // console.log("click");
+            
+            let trs = document.querySelectorAll("tbody>tr");
+            // console.log(trs[0].children[0]);
+            let lotto = [];
+            for(let i=0; i<6; i++){
+                let no = parseInt(Math.random()*45 +1);
+                if(lotto.indexOf(no) == -1){
+                    lotto.push(no);
+                    trs[0].children[i].textContent = no;    
+                }             
+            }
+        });
 
-
+    });
 </script>
 
 </html>

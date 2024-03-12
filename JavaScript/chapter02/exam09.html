@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="" rel="stylesheet">
-
+<style>
+	#p02{
+		color: #ff0000;
+	}
+	
+</style>
 </head>
 
 <body>
@@ -17,11 +22,56 @@
 		<li>여섯번째아이템입니다.</li>
 	</ul>
 	
+	<p id="p01" style="color: #0000ff; ">안녕하세요</p>
+	<p id="p02">반갑습니다</p>
 
 </body>
 
 <script>
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded", function(){
 
+		let ulTag = document.querySelector("ul");
+		console.log(ulTag);
+		ulTag.style.fontSize = "20px"; // 문자열로 작성
+		// <ul style="font-size : 20px">  - js로 변경시 inline 방식으로 적용됨
+		ulTag.style.border = "1px solid #ff0000";
+		
+		ulTag.firstElementChild.style.fontFamily = "궁서";
+		ulTag.firstElementChild.style.backgroundColor = "#d6d6d6";
+		ulTag.firstElementChild.style.width = "200px";
+		ulTag.firstElementChild.style.paddingLeft = "50px";
+
+		ulTag.lastElementChild.style.border = "1px dotted #000000";
+		ulTag.lastElementChild.style.borderWidth = "5px";
+
+		ulTag.style.listStyleType = "none";
+
+		let p2Tag = document.querySelector("#p02");
+		console.log(p2Tag.style.color);
+		p2Tag.style.fontFamily = "궁서";
+		p2Tag.style.backgroundColor = "#d6d6d6";
+
+		let p1Tag = document.querySelector("#p01");
+		console.log(p1Tag);
+		console.log(p1Tag.style.color);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	});
 </script>
 
 </html>

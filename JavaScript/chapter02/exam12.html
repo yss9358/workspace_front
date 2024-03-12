@@ -23,7 +23,25 @@
 </body>
 
 <script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded",function(){
+        console.log("DOM tree 생성");
 
+        // btn버튼을 클릭했을때 
+        let btn = document.querySelector("#btn");
+        btn.addEventListener("click",function(){
+            console.log("버튼클릭");
+            let h1Tag = document.querySelector("h1");
+            console.log(h1Tag);
+            h1Tag.textContent = "홍길동";
+            h1Tag.style.color = "#0000ff";
+            h1Tag.style.fontSize = "30px";
+            h1Tag.style.backdropFilter = "#ff0000";
+            h1Tag.style.fontFamily = "궁서";
+        });
+
+
+    });
 
 </script>
 

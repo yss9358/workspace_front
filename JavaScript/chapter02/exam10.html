@@ -7,12 +7,10 @@
 <style>
 	.box-red{
 		width: 300px;
-		width: 300px;
 		background-color: #ff0000;
 	}
 
 	.box-blue{
-		width: 500px;
 		width: 500px;
 		background-color: #0000ff;
 	}
@@ -41,7 +39,7 @@
 </head>
 
 <body>
-	<div class="box-red bold 50px">
+	<div class="box-red 50px">
 		학교종이 땡땡땡<br>
 		어서모이자<br>
 		선생님이 우리를<br>
@@ -52,6 +50,23 @@
 </body>
 
 <script>
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded", function(){
+
+
+		let div = document.querySelector("div");
+		console.log(div.className);
+		console.log(div.classList);
+		div.classList.add("bold");
+		div.classList.remove("size50");
+		div.classList.remove("box-red");
+		div.classList.add("box-blue"); 
+		div.classList.replace("box-blue","box-red");
+		div.classList.add("size20");
+
+
+
+	});
 
 	
 </script>

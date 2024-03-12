@@ -56,28 +56,24 @@
 	// DOM tree 완료 시점
 	document.addEventListener("DOMContentLoaded", function(){
 		// personList
-		let personVo1 = {
-			name : "정우성",
-			hp : "010-1111-1111",
-			company : "02-1111-1111"
-		};
-		let personVo2 = {
-			name : "이효리",
-			hp : "010-2222-2222",
-			company : "02-2222-2222"
-		}
-		let personVo3 = {
-			name : "박명수",
-			hp : "010-3333-3333",
-			company : "02-3333-3333"
-		}
-		
+		let trs = document.querySelectorAll("tbody>tr");
+		console.log(trs);
 		let personList = [];
-		personList[0] = personVo1;
-		personList[1] = personVo2;
-		personList[2] = personVo3;
-
-		console.log(personList);
+		for(let i=0; i<trs.length; i++){
+			let name = trs[i].children[0].textContent;
+			let hp = trs[i].children[1].textContent;
+			let company = trs[i].children[2].textContent;
+			let personVo = {
+				name : name,
+				hp : hp,
+				company : company
+			}
+			personList.push(personVo);
+		}
+		console.log(personList[1].hp);
+		
+		
+		
 		
 	});
 

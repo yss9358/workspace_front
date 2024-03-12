@@ -25,8 +25,30 @@
         }
         
         console.log(tri);
-        let rec = {};
+        console.log(tri.area(5,9.408));
+        let rec = {
+            name : "사각형",
+            width : 5,
+            area : function(a,b){
+                sum = a * b
+                return sum;
+            }
+        };
+        console.log(rec);
+        console.log(rec.area(5,6.846));
+        
+        const PI = 3.14;
         let circle = {};
+        circle.name = "원";
+        circle.radius = 5;
+        circle.area = function(PI, a){
+            sum = PI * a * a
+            return sum 
+        };
+        
+        console.log(circle);
+        console.log(circle.area(PI,5));
+        
         
         
     </script>

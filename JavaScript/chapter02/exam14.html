@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Inser title here</title>
+<style>
+    
+    div {
+        border: 1px solid #ff0000;
+    }
+    p {
+        border: 1px solid #000000;
+    }
+    
+</style>
+</head>
+
+<body>
+    
+    <div>
+        <!-- 시작전 "beforebegin" -->
+        <p id="p1">
+            <!-- 시작후 "afterbegin" -->
+            마바사아자차카타파하
+            <!-- 끝나기전 "beforeend" -->
+        </p>
+        <!-- 끝난후 "afterend" -->
+    </div>
+  
+</body>
+
+<script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        console.log("DOM tree 생성");
+
+        // insertAdjacentHTML(position, 추가할문자열) - 특정 위치에 문자열 삽입
+        
+        let p1Tag = document.querySelector("#p1");
+        console.log(p1Tag);
+        p1Tag.insertAdjacentHTML("afterbegin", "<strong>가나다라</strong>");
+
+
+
+
+
+
+
+
+    });
+
+
+</script>
+
+</html>

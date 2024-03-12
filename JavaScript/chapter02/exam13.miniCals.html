@@ -23,7 +23,41 @@
 </body>
 
 <script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+        // console.log("DOM tree 완료 시점");
 
+        let btnPlus = document.querySelector("#btnPlus");
+        // console.log(btn);
+
+        // 더하기버튼 클릭시 
+        btnPlus.addEventListener("click", function(){
+            // console.log("click");
+            let left = document.querySelector("#left");
+            // console.log(left);
+            let right = document.querySelector("#right");
+            // console.log(right);
+            let a = Number(left.value);
+            // console.log(a);
+            let b = Number(right.value);
+            // console.log(b);
+            let display = document.querySelector("#display");
+            // console.log(display);
+            let sum = a + b ;
+            // console.log(sum);
+           
+            display.textContent = sum;
+            left.value = "";
+            right.value = "";
+        });
+
+
+
+
+
+
+
+    });
 </script>
 
 </html>

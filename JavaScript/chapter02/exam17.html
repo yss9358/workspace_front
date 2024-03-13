@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+<style>
+    ul {
+        width: 200px;
+        padding: 20px;
+        background-color: #00ffff;
+    }
+    li {
+        border: 1px solid #000000;
+    }
+</style>
+</head> 
+<body>
+     <!-- beforebegin -->
+     <ul>
+        <!-- afterbegin -->
+        <li>첫번째 아이템 입니다</li>
+        <li>두번째 아이템 입니다</li>
+        <li>세번째 아이템 입니다</li>
+        <li>네번째 아이템 입니다</li>
+        <li>다섯번째 아이템 입니다</li>
+        <!-- beforend -->
+    </ul>
+    <!-- afterend -->
+    <button id="btnAfter" type="button">뒤에추가</button>
+</body>
+
+<script>
+    // DOM tree 완료 시점
+    document.addEventListener("DOMContentLoaded",function(e){
+        console.log("DOM tree 생성");
+
+        // 뒤에추가 버튼을 클릭했을때 
+        btnAfter.addEventListener("click",function(){
+            let btnAfter = document.querySelector("#btnAfter");
+            let str = "<li>뒤에 추가된 아이템 입니다.</li>";
+            document.querySelector("ul").insertAdjacentHTML("beforeend",str);
+        });
+        
+        /*
+        // li 요소를 클릭했을 때 - 새로추가되는 li 요소에는 적용되지 않는다.
+        let liTags = document.querySelectorAll("ul>li");
+        for(let i=0; i<liTags.length; i++){
+            liTags[i].addEventListener("click",function(){
+                // console.log("click");
+            });
+        }
+        */
+
+        // ul 요소를 클릭했을 때의 기능을 li요소에 위임
+        let ulTag = document.querySelector("ul");
+        ulTag.addEventListener("click", function(event){
+            // this = 이벤트가 붙어있는 요소 ㅡ 
+            // event.target -.> 사용자가 실제로클릭한 그 요소
+            console.log("clck");
+            console.log(this);
+            console.log(event.target);
+            console.log(event.target.tagName);
+
+            // 실제 클릭한곳(target)이 "li"요소이면 아래코드 실행
+
+            if(event.target.tagName == "LI"){
+                // event.target.textContent  = "";
+                event.target.remove();
+            }
+        });
+    });      
+</script>
+</html>

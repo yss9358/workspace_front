@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+<style>
+
+</style>
+</head> 
+<body>
+    
+    <form id="guestForm" action="http://localhost:8888/mysite6/guestboook/add" method="get">
+		<table border="1" width="540px">
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name" value=""></td>
+				<td>비밀번호</td>
+				<td><input type="password" name="pw" value=""></td>
+			</tr>
+			<tr>
+				<td colspan="4"><textarea cols="72" rows="5" name="content"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4"><button id="btnWrite" type="submit">등록</button></td>
+			</tr>
+
+		</table>
+	</form>
+	<br>
+
+</body>
+
+<script>
+    // DOT tree 완료 시점
+    document.addEventListener("DOMContentLoaded", function(){
+
+        let guestForm = document.querySelector("#guestForm");
+        // console.log(guestForm);
+
+        // 전송(form 의 submit)버튼을 클릭할때
+        guestForm.addEventListener("submit",function(){
+            // console.log("전송");
+            // event.preventDefault();
+
+            let nameTag = document.querySelector('input[name="name"]');
+            let name = nameTag.value.trim();
+            let pwTag = document.querySelector('input[name="pw"]');
+            let pw = pwTag.value.trim();
+            let contentTag = document.querySelector("textarea");
+            let content = contentTag.value.trim();
+
+            // trim(); - 문자열 양쪽의 공백 제거
+
+            if(name == ""){ // 이름이 입력되지 않았으면 등록버튼 전송이 되지 않는다
+                event.preventDefault(); // 전송이 되지 않는 함수
+                window.alert("이름을 입력해주세요."); // 전송이 되지않고 경고창이 뜸, window는 생략가능
+                return false; // 이벤트 전파를 막는다. 함수가 종료됨
+            }  
+            if (pw == ""){
+                event.preventDefault();
+                window.alert("비밀번호를 입력해주세요.");
+                return false;
+            } 
+            if (content == ""){
+                event.preventDefault();
+                window.alert("내용을 입력해주세요.");
+                return false;
+            } 
+            // 서버로 데이터 전송 ( form 의 원래 기능 작동)
+            // alert("전송완료");
+            // return true; // 보통 작성하지 않는다
+        });
+    });
+
+</script>
+</html>

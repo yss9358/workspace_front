@@ -10,7 +10,7 @@
 <body>
 
 <div id="cal">
-	<input id="display" type="text"><br>
+	<input id="display" type="text" value=""><br>
 	
 	<div id="btnArea">
 		<button id="btn9" type="button">9</button>
@@ -44,11 +44,51 @@
 	
 </div>
 
-
 </body>
+<script>
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded", function(){
+		// console.log("DOM tree 생성");
+		
+/*초기화*/	let clear = document.querySelector("#btnClear");	
+/*계산버튼*/let equal = document.querySelector("#btnEqual");
+/*화면*/	let display = document.querySelector("input");
+/*숫자*/	let btnNum = document.querySelectorAll("#btn9,#btn8,#btn7,#btn6,#btn5,#btn4,#btn3,#btn2,#btn1,#btn0");
+/*연산버튼*/let btnCal = document.querySelectorAll("#btnDiv,#btnMulti,#btnPlus,#btnMinus");
+/*이전*/	let preNum = 0;
+/*이후*/	let postNum = 0;
+		
+		// 클리어버튼
+		clear.addEventListener("click",function(){
+			display.value = "";
+			preNum = 0;
+		});		
+
+		// 숫자버튼
+		for(let i=0; i<btnNum.length; i++){
+			btnNum[i].addEventListener("click",function(){
+				display.value += btnNum[i].textContent;
+		});
+		} // 숫자버튼 끝
+		
+		// 계산버튼
+		for(let i=0; i<btnCal.length; i++){
+			btnCal[i].addEventListener("click",function(){
+				preNum = Number(display.value);
+				display.value += btnCal[i].textContent;
+				console.log(preNum);
+			});
+		} // 계산버튼 끝
+		
+		equal.addEventListener("click",function(){
+			let a = display.value.split(btnCal.textContent);
+			console.log(a);
+		});
 
 
 
-
-
+	
+	}); // document.addEventListener 끝		
+	
+</script>	
 </html>

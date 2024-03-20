@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./cal.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="cal">
+	<input id="display" type="text" value=""><br>
+	
+	<div id="btnArea">
+		<button id="btn9" type="button">9</button>
+		<button id="btn8" type="button">8</button>
+		<button id="btn7" type="button">7</button>
+		
+		<button id="btnDiv" type="button">/</button>
+		<br>
+		
+		<button id="btn6" type="button">6</button>
+		<button id="btn5" type="button">5</button>
+		<button id="btn4" type="button">4</button>
+		
+		<button id="btnMulti" type="button">*</button>
+		<br>
+		
+		<button id="btn3" type="button">3</button>
+		<button id="btn2" type="button">2</button>
+		<button id="btn1" type="button">1</button>
+		
+		<button id="btnPlus" type="button">+</button>
+		<br>
+		
+		<button id="btnClear" type="button">C</button>
+		<button id="btn0" type="button">0</button>
+		<button id="btnEqual" type="button">=</button>
+		<button id="btnMinus" type="button">-</button>
+		<br>
+	</div>
+	
+	
+</div>
+
+</body>
+<script>
+	// DOM tree 완료 시점
+	document.addEventListener("DOMContentLoaded", function(){
+		console.log("DOM tree 생성");
+
+		let oper = document.querySelectorAll("#btnPlus,#btnMinus,#btnMulti,#btnDiv"); // 사칙연산버튼
+		let num = document.querySelectorAll("#btn9,#btn0,#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8"); // 숫자버튼
+		let clear = document.querySelector("#btnClear"); // 초기화버튼
+		let equal = document.querySelector("#btnEqual"); // 계산버튼
+		let display = document.querySelector("#display"); // 입력값 출력화면
+	
+
+	
+		
+		// 초기화버튼
+		clear.addEventListener("click", function(){
+			display.value = "";
+		}); // 초기화버튼 끝
+
+		// 숫자버튼 반복문
+		for(let i=0; i<num.length; i++){
+			num[i].addEventListener("click", function(){
+				switch(i){
+					case 0 :
+						display.value += 9;
+						break;
+					case 1 :
+						display.value += 8;
+						break;
+					case 2 :	
+						display.value += 7;
+						break;
+					case 3 :
+						display.value += 6;
+						break;
+					case 4 :
+						display.value += 5;
+						break;
+					case 5 :
+						display.value += 4;
+						break;
+					case 6 :
+						display.value += 3;
+						break;
+					case 7 :
+						display.value += 2;
+						break;
+					case 8 :
+						display.value += 1;
+						break;
+					case 9 :
+						display.value += 0;
+						break;
+				}
+			}); // 숫자버튼 끝
+		} // 숫자버튼 반복문 끝
+		
+		// 사칙연산버튼반복문
+		for(let i=0; i<oper.length; i++){
+			oper[i].addEventListener("click", function(){
+			switch(i){
+				case 0 :
+					display.value += "/";
+					break;				
+				case 1 :
+					display.value += "*";
+					break;
+				case 2 :
+					display.value += "+";
+					break;
+				case 3 :
+					display.value += "-";
+					break;
+			}
+		});
+		} // 사칙연산버튼반복문끝
+		
+		// 계산함수
+		function cal (a,oper,b){
+			let sum = 0;
+			if(oper == "+"){
+				let sum = Number(a) + Number(b);
+				return sum;
+			} else if(oper == "-"){
+				let sum = Number(a) - Number(b);
+				return sum;
+			} else if(oper == "*"){
+				let sum = Number(a) * Number(b);
+				return sum;
+			} else if(oper == "/") {
+				let sum = Number(a) / Number(b);
+				return sum;
+			} else {
+				console.log("실패");
+			}
+			return sum;
+		};	// 계산함수끝
+
+	});	
+
+</script>	
+</html>

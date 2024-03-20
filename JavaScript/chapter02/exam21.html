@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="" rel="stylesheet">
+</head> 
+<body>
+    <p> js 추가 문법</p>
+    
+</body>
+
+<script>
+// 기명함수 
+/*
+function plus(a,b){
+    return (a+b);
+}
+
+let result = plus(5,10);
+console.log(result);
+*/
+
+
+// 익명함수
+/*
+let plus = function(a,b){return a+b};
+console.log(plus(10,20));
+*/
+
+
+// 익명함수 - 화살표함수 예제
+/*
+let plus = (a,b) => {return a+b};
+console.log(plus(5,5));
+*/
+
+
+// 화살표함수 예제
+let circleArea = function(a){return a*a*3.14};
+console.log(circleArea(1));
+
+// 화살표함수는 function 생략가능
+let circleArea2 = (a) => {return (a*a*3.14)};
+console.log(circleArea2(2));
+
+// 파라미터가 1개이면 괄호 생략가능 , 2개는 안됨
+let circleArea3 = a => {return a*a*3.14};
+console.log(circleArea3(3));
+
+// 함수내부의 내용이 한줄이면 [괄호와 return 생략가능 : {return }생략가능].
+// 리턴값만 적어주면됨.
+let circleArea4 = r => r*r*3.14 ;
+console.log(circleArea4(4));
+
+let sayHello = function(){
+    console.log("안녕");
+};
+sayHello();
+
+let sayHello2 = () => console.log("안녕2");
+sayHello2();
+
+
+
+
+
+
+
+
+
+</script>
+</html>
